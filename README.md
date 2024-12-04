@@ -57,6 +57,17 @@ Images
 
 An image is a read-only template with instructions for creating a Docker container. Often, an image is based on another image, with some additional customization. For example, you may build an image which is based on the ubuntu image, but installs the Apache web server and your application, as well as the configuration details needed to make your application run.
 
+docker build -t archi/my-first-docker-image:latest .
+
+docker images
+
+archi/my-first-docker-image   latest                  5a292fa58b4b   38 seconds ago   559MB
+
+docker run -it archi/my-first-docker-image
+
+Hello World
+
+docker push archi/my-first-docker-image
 
 
 
